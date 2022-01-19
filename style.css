@@ -1,0 +1,107 @@
+h1{
+  padding-top: 75px;
+}
+#first{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  animation-name: firstAnime;
+  animation-duration: 4s;
+}
+@keyframes firstAnime{
+  from{background-color: red;}
+  to{background-color: blue;}
+}
+
+#second{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  animation-name: secondAnime;
+  animation-duration: 4s;
+}
+
+@keyframes secondAnime{
+  0% {background-color: red;}
+  25% {background-color: green;}
+  50% {background-color: blue;}
+  100% {background-color: yellow;}
+}
+
+#third{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: thirdAnime;
+  animation-duration: 4s;
+}
+
+@keyframes thirdAnime{
+  0% {background-color: red; left: 0px; top: 0px;}
+  25% {background-color: green; left: 100px; top: 0px;}
+  50% {background-color: blue; left: 100px; top: 100px;}
+  75% {background-color: yellow; left: 0px; top: 100px;}
+  100% {background-color: red; left: 0px; top: 0px;}
+}
+
+#forth{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: thirdAnime;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-direction: reverse;
+
+}
+
+@keyframes forthAnime{
+  0% {background-color: red; left: 0px; top: 0px;}
+  25% {background-color: green; left: 100px; top: 0px;}
+  50% {background-color: blue; left: 100px; top: 100px;}
+  75% {background-color: yellow; left: 0px; top: 100px;}
+  100% {background-color: red; left: 0px; top: 0px;}
+}
+
+#fifth{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: thirdAnime;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes fifthAnime{
+  0% {background-color: red; left: 0px; top: 0px;}
+  25% {background-color: green; left: 100px; top: 0px;}
+  50% {background-color: blue; left: 100px; top: 100px;}
+  75% {background-color: yellow; left: 0px; top: 100px;}
+  100% {background-color: red; left: 0px; top: 0px;}
+}
+
+.d{
+  width: 150px;
+  height: 75px;
+  border: solid green;
+  margin: 10px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
